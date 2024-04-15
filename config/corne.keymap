@@ -21,22 +21,22 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <75>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <27 28>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <75>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <15 16>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <75>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <100>;
         };
 
         change_lang {
@@ -108,8 +108,8 @@
             display-name = "Lower";
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3           &kp N4            &kp N5    &kp N6     &kp N7          &kp N8          &kp N9        &kp N0           &trans
-&trans  &kp LC(N)  &kp LC(E)  &kp LC(I)        &kp LC(O)         &none     &kp LC(U)  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &none      &none      &left_bracket_b  &right_bracket_b  &none     &kp LC(D)  &kp N           &kp E           &kp I         &kp O            &trans
+&trans  &kp LC(H)  &kp LC(K)  &kp LC(J)        &kp LC(L)         &none     &kp LC(U)  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &none      &none      &left_bracket_b  &right_bracket_b  &none     &kp LC(D)  &kp H           &kp K           &kp J         &kp L            &trans
                               &trans           &trans            &trans    &trans     &kp LEFT_SHIFT  &trans
             >;
         };
