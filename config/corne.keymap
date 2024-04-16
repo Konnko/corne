@@ -22,8 +22,12 @@
 
         gotoadjust {
             bindings = <&tog 4>;
-            key-positions = <5 38 6 39>;
-            require-prior-idle-ms = <1000>;
+            key-positions = <11 23 35>;
+        };
+
+        change_lang {
+            bindings = <&change_lang>;
+            key-positions = <0 12 24>;
         };
     };
 
@@ -65,7 +69,7 @@
 &kp GRAVE           &kp Q  &kp W  &kp E                 &kp R         &kp T             &kp Y      &kp U        &kp I                       &kp O    &kp P      &kp EQUAL
 &kp BACKSPACE       &kp A  &kp S  &kp D                 &kp F         &kp G             &kp H      &kp J        &kp K                       &kp L    &kp SEMI   &kp SQT
 &mt LEFT_ALT MINUS  &kp Z  &kp X  &kp C                 &kp V         &kp B             &kp N      &kp M        &kp COMMA                   &kp DOT  &kp SLASH  &mt RIGHT_ALT BSLH
-                                  &mt LEFT_CONTROL TAB  &lt 2 ESCAPE  &kp LEFT_SHIFT    &kp SPACE  &lt 3 ENTER  &mt LEFT_COMMAND BACKSPACE
+                                  &mt LEFT_COMMAND TAB  &lt 2 ESCAPE  &kp LEFT_SHIFT    &kp SPACE  &lt 3 ENTER  &mt LEFT_CONTROL BACKSPACE
             >;
         };
 
@@ -114,7 +118,7 @@
 
         adjust_layer {
             bindings = <
-&out OUT_TOG  &none         &none         &none         &none         &change_lang    &kp K_MUTE       &none  &none  &none  &none  &none
+&out OUT_TOG  &none         &none         &none         &none         &none           &kp K_MUTE       &none  &none  &none  &none  &none
 &none         &none         &none         &none         &none         &none           &kp C_VOLUME_UP  &none  &none  &none  &none  &none
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_DN     &none  &none  &none  &none  &none
                                           &none         &none         &none           &none            &none  &none
