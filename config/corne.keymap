@@ -9,39 +9,21 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+&lt {
+    tapping-term-ms = <150>;
+    flavor = "hold-preferred";
+};
+
+&mt { quick-tap-ms = <200>; };
+
 / {
     combos {
         compatible = "zmk,combos";
 
         gotoadjust {
             bindings = <&tog 4>;
-            key-positions = <11 23 35>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <19 20>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <100>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <27 28>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <100>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <15 16>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <100>;
-        };
-
-        change_lang {
-            bindings = <&change_lang>;
-            key-positions = <0 12 24>;
+            key-positions = <5 38 6 39>;
+            require-prior-idle-ms = <1000>;
         };
     };
 
@@ -80,10 +62,10 @@
 
             display-name = "Base Q";
             bindings = <
-&kp GRAVE           &kp Q  &kp W  &kp E     &kp R  &kp T             &kp Y      &kp U  &kp I             &kp O    &kp P      &kp EQUAL
-&kp BACKSPACE       &kp A  &kp S  &kp D     &kp F  &kp G             &kp H      &kp J  &kp K             &kp L    &kp SEMI   &kp SQT
-&mt LEFT_ALT MINUS  &kp Z  &kp X  &kp C     &kp V  &kp B             &kp N      &kp M  &kp COMMA         &kp DOT  &kp SLASH  &mt RIGHT_ALT BSLH
-                                  &kp LGUI  &mo 2  &kp LEFT_SHIFT    &kp SPACE  &mo 3  &kp LEFT_CONTROL
+&kp GRAVE           &kp Q  &kp W  &kp E                 &kp R         &kp T             &kp Y      &kp U        &kp I                       &kp O    &kp P      &kp EQUAL
+&kp BACKSPACE       &kp A  &kp S  &kp D                 &kp F         &kp G             &kp H      &kp J        &kp K                       &kp L    &kp SEMI   &kp SQT
+&mt LEFT_ALT MINUS  &kp Z  &kp X  &kp C                 &kp V         &kp B             &kp N      &kp M        &kp COMMA                   &kp DOT  &kp SLASH  &mt RIGHT_ALT BSLH
+                                  &mt LEFT_CONTROL TAB  &lt 2 ESCAPE  &kp LEFT_SHIFT    &kp SPACE  &lt 3 ENTER  &mt LEFT_COMMAND BACKSPACE
             >;
         };
 
@@ -123,16 +105,16 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE        &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &kp DQT  &trans
-&trans  &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &kp SQT  &trans
-&trans  &none  &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS        &none      &none      &none          &none      &none    &trans
-                      &trans                &none                  &trans           &trans     &trans     &trans
+&trans  &none  &none  &kp LBRC          &kp RBRC               &kp GRAVE        &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &kp DQT  &trans
+&trans  &none  &none  &kp LPAR          &kp RIGHT_PARENTHESIS  &kp BACKSLASH    &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &kp SQT  &trans
+&trans  &none  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp MINUS        &none      &none      &none          &none      &none    &trans
+                      &trans            &none                  &trans           &trans     &trans     &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&out OUT_TOG  &none         &none         &none         &none         &none           &kp K_MUTE       &none  &none  &none  &none  &none
+&out OUT_TOG  &none         &none         &none         &none         &change_lang    &kp K_MUTE       &none  &none  &none  &none  &none
 &none         &none         &none         &none         &none         &none           &kp C_VOLUME_UP  &none  &none  &none  &none  &none
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_DN     &none  &none  &none  &none  &none
                                           &none         &none         &none           &none            &none  &none
