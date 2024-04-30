@@ -63,7 +63,8 @@
                 <&kp LC(SPACE)>,
                 <&macro_press &mo 3>,
                 <&macro_pause_for_release>,
-                <&macro_release &mo 3 &kp LC(SPACE)>;
+                <&macro_release &mo 3>,
+                <&kp LC(SPACE)>;
         };
 
         tele_harpoon: tele_harpoon {
