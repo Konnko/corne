@@ -123,10 +123,10 @@
 
             display-name = "Base Q";
             bindings = <
-&kp GRAVE             &kp Q  &kp W  &kp E   &kp R        &kp T             &kp Y      &kp U           &kp I      &kp O    &kp P      &kp EQUAL
-&kp BACKSPACE         &kp A  &kp S  &kp D   &kp F        &kp G             &kp H      &kp J           &kp K      &kp L    &kp SEMI   &kp SQT
-&mttap LBKT LEFT_ALT  &kp Z  &kp X  &kp C   &kp V        &kp B             &kp N      &kp M           &kp COMMA  &kp DOT  &kp SLASH  &mttap RBKT LEFT_ALT
-                                    &trans  &lt 2 ENTER  &kp LEFT_SHIFT    &kp SPACE  &l3_lang 3 ESC  &trans
+&kp GRAVE                 &kp Q  &kp W  &kp E   &kp R        &kp T             &kp Y      &kp U           &kp I      &kp O    &kp P      &kp EQUAL
+&kp BACKSPACE             &kp A  &kp S  &kp D   &kp F        &kp G             &kp H      &kp J           &kp K      &kp L    &kp SEMI   &kp SQT
+&mttap LEFT_CONTROL LBKT  &kp Z  &kp X  &kp C   &kp V        &kp B             &kp N      &kp M           &kp COMMA  &kp DOT  &kp SLASH  &mttap LEFT_CONTROL RBKT
+                                        &trans  &lt 2 ENTER  &kp LEFT_SHIFT    &kp SPACE  &l3_lang 3 ESC  &trans
             >;
         };
 
