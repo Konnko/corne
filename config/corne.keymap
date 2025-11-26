@@ -52,9 +52,20 @@
         change_lang: change_lang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE)>, <&macro_wait_time 75>, <&tog 1>;
+            bindings =
+                <&tog 1>,
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp SPACE>,
+                <&macro_release &kp LCTRL>;
 
             label = "CHANGE_LANG";
+        };
+
+        change_lang_globe: change_lang_globe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GLOBE>, <&macro_wait_time 50>, <&tog 1>;
+            label = "CHANGE_LANG_GLOBE";
         };
 
         tele_harpoon: tele_harpoon {
