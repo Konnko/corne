@@ -173,10 +173,10 @@
 
             display-name = "SYMBOLS";
             bindings = <
-&trans  &kp LS(N4)     &kp PERCENT     &none     &none     &none                &kp LA(AT_SIGN)  &kp MINUS    &kp PLUS       &kp ASTERISK     &kp PIPE  &trans
-&trans  &kp LA(GRAVE)  &kp UNDERSCORE  &kp LPAR  &kp RPAR  &kp LA(AMPERSAND)    &kp LA(DOLLAR)   &none        &kp EQUAL      &kp EXCLAMATION  &kp BSLH  &trans
-&trans  &none          &kp LS(BSLH)    &none     &none     &kp LS(N6)           &kp AMPERSAND    &kp AT_SIGN  &kp LA(POUND)  &kp LA(LCTRL)    &none     &trans
-                                       &trans    &trans    &trans               &trans           &trans       &trans
+&trans  &kp LS(N4)     &kp PERCENT     &kp LA(LEFT_PARENTHESIS)  &kp LA(RIGHT_PARENTHESIS)  &none         &kp LA(NUMBER_2)  &kp MINUS    &kp PLUS          &kp ASTERISK      &kp PIPE  &trans
+&trans  &kp LA(GRAVE)  &kp UNDERSCORE  &kp LPAR                  &kp RPAR                   &kp LA(N7)    &kp LA(NUMBER_4)  &none        &kp EQUAL         &kp EXCLAMATION   &kp BSLH  &trans
+&trans  &none          &kp LS(BSLH)    &none                     &none                      &kp LS(N6)    &kp AMPERSAND     &kp AT_SIGN  &kp LA(NUMBER_3)  &kp LA(NUMBER_6)  &none     &trans
+                                       &trans                    &trans                     &trans        &trans            &trans       &trans
             >;
         };
 
