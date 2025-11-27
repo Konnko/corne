@@ -54,9 +54,12 @@
             #binding-cells = <0>;
             bindings =
                 <&tog 1>,
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp SPACE>,
-                <&macro_release &kp LCTRL>;
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LCTRL>;
 
             label = "CHANGE_LANG";
         };
@@ -65,6 +68,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GLOBE>, <&macro_wait_time 50>, <&tog 1>;
+
             label = "CHANGE_LANG_GLOBE";
         };
 
@@ -169,10 +173,10 @@
 
             display-name = "SYMBOLS";
             bindings = <
-&trans  &kp LS(N4)     &kp LS(N5)     &kp LS(RBKT)  &kp LS(BSLH)  &kp LS(GRAVE)    &kp LS(N2)    &kp MINUS     &kp LS(EQUAL)  &kp LS(N8)  &kp LS(FSLH)  &trans
-&trans  &kp GRAVE      &kp LS(MINUS)  &kp LS(N9)    &kp LS(N0)    &kp LS(N7)       &kp LS(N4)    &kp LA(RBKT)  &kp EQUAL      &kp LS(N1)  &kp BSLH      &trans
-&trans  &kp LS(COMMA)  &kp LS(BSLH)   &kp LBKT      &kp RBKT      &kp LS(N6)       &kp LA(FSLH)  &kp LA(N2)    &kp LS(N3)     &kp LS(N6)  &kp LS(DOT)   &trans
-                                      &trans        &trans        &trans           &trans        &trans        &trans
+&trans  &kp LS(N4)     &kp PERCENT     &none     &none     &none                &kp LA(AT_SIGN)  &kp MINUS    &kp PLUS       &kp ASTERISK     &kp PIPE  &trans
+&trans  &kp LA(GRAVE)  &kp UNDERSCORE  &kp LPAR  &kp RPAR  &kp LA(AMPERSAND)    &kp LA(DOLLAR)   &none        &kp EQUAL      &kp EXCLAMATION  &kp BSLH  &trans
+&trans  &none          &kp LS(BSLH)    &none     &none     &kp LS(N6)           &kp AMPERSAND    &kp AT_SIGN  &kp LA(POUND)  &kp LA(LCTRL)    &none     &trans
+                                       &trans    &trans    &trans               &trans           &trans       &trans
             >;
         };
 
