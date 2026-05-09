@@ -29,7 +29,7 @@
         };
 
         change_lang {
-            bindings = <&change_lang>;
+            bindings = <&change_lang_globe>;
             key-positions = <0 12 24>;
         };
     };
@@ -67,16 +67,8 @@
         change_lang_globe: change_lang_globe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE>, <&macro_wait_time 50>, <&tog 1>;
-
+            bindings = <&kp GLOBE &tog 1>;
             label = "CHANGE_LANG_GLOBE";
-        };
-
-        tele_harpoon: tele_harpoon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp SPACE &kp M>;
-            label = "TELE_HARPOON";
         };
     };
 
