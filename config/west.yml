@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: konnko
-      url-base: https://github.com/Konnko
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: konnko
-      revision: niceview-tearing-fix
+      remote: zmkfirmware
+      revision: v0.3
       import: app/west.yml
   self:
     path: config
