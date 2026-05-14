@@ -29,7 +29,7 @@
         };
 
         change_lang {
-            bindings = <&change_lang_globe>;
+            bindings = <&change_lang>;
             key-positions = <0 12 24>;
         };
     };
@@ -56,19 +56,13 @@
                 <&tog 1>,
                 <&macro_press>,
                 <&kp LCTRL>,
+                <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
             label = "CHANGE_LANG";
-        };
-
-        change_lang_globe: change_lang_globe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GLOBE &tog 1>;
-            label = "CHANGE_LANG_GLOBE";
         };
     };
 
