@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: konnko
-      revision: niceview-layer-batch
+      revision: niceview-tearing-fix
       import: app/west.yml
   self:
     path: config
